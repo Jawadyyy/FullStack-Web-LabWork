@@ -1,0 +1,170 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+/* ===== Navbar ===== */
+/* ===== Navbar ===== */
+nav {
+  background-color: #FF6F61;  /* Main color */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;  /* Center items horizontally */
+  align-items: center;
+  gap: 40px;  /* spacing between links */
+  flex-wrap: wrap; /* wrap on smaller screens */
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffe0dc;
+  color: #FF6F61;
+  transform: scale(1.05);
+}
+
+
+/* ===== Pages ===== */
+div {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FF6F61;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #FF6F61;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #ff8b7d;
+}
+
+/* ===== Products List ===== */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card h3 {
+  color: #FF6F61;
+}
+
+.product-card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* ===== Loading / Error ===== */
+.loading,
+.error {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5em;
+  color: #FF6F61;
+}
+
+/* ===== Quiz Page ===== */
+.quiz-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.quiz-container button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* ===== Counter Page ===== */
+.counter-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.counter-container h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* ===== Product Details ===== */
+.product-details {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.product-details h1 {
+  color: #FF6F61;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* ===== Contact & About ===== */
+.contact, .about {
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
