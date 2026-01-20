@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="lab2.css">
+  <title>Lab 02</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+  <h1>LAB #02</h1>
+  <h2>Statement Purpose</h2>
+  <p>To familiarize the students with:</p>
+  <ul>
+    <li>Links</li>
+    <li>Tables</li>
+    <li>Forms (Attributes, Elements, Types)</li>
+    <li>Quotations</li>
+    <li>Cascading Stylesheet (CSS) Basics, and inline styling</li>
+  </ul>
+
+  <h2>Activity Outcomes</h2>
+  <p>After this lab the students should be able to add links, tables, create forms, add quotations and inline CSS in web pages.</p>
+
+  <h2>HTML Links - Hyperlinks</h2>
+  <p>HTML links are hyperlinks. You can click on a link and jump to another document.</p>
+
+  <h3>Syntax</h3>
+  <a href="url"></a>
+
+  <p>Example: <a href="https://www.google.com/">Visit google.com!</a></p>
+
+  <h3>Target Attribute</h3>
+  <p>Example with target="_blank": <a href="https://www.google.com/" target="_blank">Visit Google!</a></p>
+
+  <h3>Absolute vs Relative URLs</h3>
+  <h4>Absolute URLs</h4>
+  <p><a href="https://www.w3.org/">W3C</a></p>
+  <p><a href="https://www.google.com/">Google</a></p>
+
+  <h4>Relative URLs</h4>
+  <p><a href="https://www.w3schools.com/html/html_images.asp">HTML Images</a></p>
+  <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+  <h3>Image as a Link</h3>
+  <a href="https://www.w3schools.com/html/">
+    <img src="images/html.jpg" alt="HTML tutorial" style="width:42px;height:42px;">
+  </a>
+
+  <h3>Email Link</h3>
+  <p><a href="mailto:someone@example.com">Send email</a></p>
+
+  <h2>HTML Table</h2>
+  <p>A table in HTML consists of table cells inside rows and columns.</p>
+
+  <table border="1" cellpadding="10" cellspacing="0">
+    <caption>Sample Table</caption>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1 Col 1</td>
+        <td>Row 1 Col 2</td>
+        <td>Row 1 Col 3</td>
+      </tr>
+      <tr>
+        <td>Row 2 Col 1</td>
+        <td>Row 2 Col 2</td>
+        <td>Row 2 Col 3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Table Footer</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>HTML Forms</h2>
+  <p>An HTML form is used to collect user input.</p>
+
+  <h3>Text Fields</h3>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+  </form>
+
+  <h3>Radio Buttons</h3>
+  <p>Choose your favorite Web language:</p>
+  <form>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+  </form>
+
+  <h3>Checkboxes</h3>
+  <form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label>
+  </form>
+
+  <h3>Submit Button</h3>
+  <form action="https://www.w3schools.com/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>Form Attributes</h3>
+  <p>Example with method and autocomplete:</p>
+  <form action="https://www.w3schools.com/action_page.php" method="post" autocomplete="on" target="_blank">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br><br>
+    <input type="submit" value="Login">
+  </form>
+
+  <h2>HTML Quotations</h2>
+  <p>Here’s an example of a short quotation:</p>
+  <p><q>HTML makes the web work.</q></p>
+
+  <p>Here’s a blockquote:</p>
+  <blockquote cite="https://www.w3.org/TR/html52/">
+    HTML is the standard markup language for creating web pages.
+  </blockquote>
+
+</body>
+</html>
