@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change CSS Styles</title>
+</head>
+<body>
+
+<h2 id="myText">Hello World!</h2>
+<button onclick="changeStyle()">Change Style</button>
+
+<script>
+  function changeStyle() {
+    let text = document.getElementById("myText");
+    text.style.color = "red";
+    text.style.fontSize = "30px";
+    text.style.backgroundColor = "yellow";
+  }
+</script>
+
+</body>
+</html>

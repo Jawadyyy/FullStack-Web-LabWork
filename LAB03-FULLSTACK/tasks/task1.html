@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change HTML Attribute</title>
+</head>
+<body>
+
+<h2>Turn the bulb ON or OFF</h2>
+<img id="myBulb" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100">
+
+<br><br>
+
+<button onclick="turnOn()">Turn On</button>
+<button onclick="turnOff()">Turn Off</button>
+
+<script>
+  function turnOn() {
+    document.getElementById("myBulb").src = "https://www.w3schools.com/js/pic_bulbon.gif";
+  }
+
+  function turnOff() {
+    document.getElementById("myBulb").src = "https://www.w3schools.com/js/pic_bulboff.gif";
+  }
+</script>
+
+</body>
+</html>

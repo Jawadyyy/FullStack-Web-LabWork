@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Code 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="div1" style="background-color: yellow; font-size: 25px; color: red; border: 2px solid red;">
+        This is first div element.
+    </div>
+    <br>
+    <div id="div2" style="background-color: lightblue; font-size: 25px; color: blue; border: 2px solid blue;">
+        This is second div element.
+    </div>
+    <br>
+    <button onclick="fun()">
+        Click me!
+    </button>
+    <p id="p"></p>
+    <p id="p1"></p>
+
+
+    <script>
+        function fun() {
+            var val = document.getElementById("div1").getAttribute("style");
+            document.getElementById("p").innerHTML = val;
+            var val1 = document.getElementById("div2").getAttribute("style");
+            document.getElementById("p1").innerHTML = val1;
+        }
+    </script>
+
+</body>
+
+</html>

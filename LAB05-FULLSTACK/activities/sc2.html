@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Code 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div>
+        <h2> It is an example to update an attribute's value using the setAttribute() method. </h2>
+        <input id="change" type="text" value="Google" />
+        <p> Click the follwing button to see the effect. </p>
+        <button onclick="fun()"> Change </button>
+    </div>
+
+
+    <script>
+        function fun() {
+            document.getElementById("change").setAttribute("type", "button");
+        }
+    </script>
+
+</body>
+
+</html>

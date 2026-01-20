@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <center><h1>-----------------------------Window System-----------------------------</h1></center>
+
+    <center>
+       <button onclick="openWin()">Open Window</button>
+        <button onclick="closeWin()">Close Window</button>
+        <button onclick="showInfo()">Show Screen Info</button>
+        <p id="screenInfo"></p>
+    </center>
+
+    <script>
+         let myWin;
+        function openWin() {
+            myWin = window.open("", "", "width=300,height=200");
+        }
+        function closeWin() {
+            if (myWin) myWin.close();
+        }
+        function showInfo() {
+            document.getElementById("screenInfo").innerHTML = "Width: " + screen.width + " Height: " + screen.height;
+        }
+    </script>
+
+</body>
+
+</html>
+

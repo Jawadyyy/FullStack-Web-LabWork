@@ -1,0 +1,7 @@
+[
+  { "rollNo": 1, "name": "Alice", "department": "CS", "cgpa": 3.4, "year": 2 },
+  { "rollNo": 2, "name": "Bob", "department": "IT", "cgpa": 2.3, "year": 3 },
+  { "rollNo": 3, "name": "Charlie", "department": "CS", "cgpa": 3.8, "year": 1 },
+  { "rollNo": 4, "name": "David", "department": "EE", "cgpa": 2.1, "year": 4 },
+  { "rollNo": 5, "name": "Eve", "department": "ME", "cgpa": 3.0, "year": 2 }
+]
