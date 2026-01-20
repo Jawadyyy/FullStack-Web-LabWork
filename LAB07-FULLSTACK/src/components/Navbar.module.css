@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ff6f61;
+}
+
+.nav { 
+  display: flex; 
+  gap: 10px; 
+  align-items: center;
+}
+
+.link {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.link:hover { transform: translateY(-3px); background: rgba(0,0,0,0.06); }
+
+.toggle {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background: white;
+}
+.toggle:hover { transform: translateY(-3px); }

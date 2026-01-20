@@ -1,0 +1,20 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfb 100%);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  background: #0f1724;
+  color: #e6eef8;
+}
+
+.footer {
+  text-align: center;
+  padding: 18px 20px;
+  margin-top: 40px;
+  color: #666;
+}
+.dark .footer { color: #9fb2d6; }
