@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 1</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 8px;
+            padding: 5px;
+            width: 250px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <form id="form">
+        <input type="text" id="name" placeholder="Full Name">
+        <div id="nameError" class="error"></div>
+
+        <input type="email" id="email" placeholder="Email">
+        <div id="emailError" class="error"></div>
+
+        <input type="password" id="password" placeholder="Password">
+        <div id="passwordError" class="error"></div>
+
+        <input type="password" id="confirm" placeholder="Confirm Password">
+        <div id="confirmError" class="error"></div>
+
+        <input type="number" id="age" placeholder="Age">
+        <div id="ageError" class="error"></div>
+
+        <button type="button" onclick="validate()">Register</button>
+    </form>
+    <p id="success" class="success"></p>
+
+    <script>
+        function validate() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let pass = document.getElementById("password").value;
+            let confirm = document.getElementById("confirm").value;
+            let age = document.getElementById("age").value.trim();
+
+            let valid = true;
+
+            document.querySelectorAll(".error").forEach(e => e.innerText = "");
+            document.getElementById("success").innerText = "";
+
+            if (!name) {
+                document.getElementById("nameError").innerText = "Name required"; valid = false;
+            }
+            if (!email) {
+                document.getElementById("emailError").innerText = "Email required"; valid = false;
+            }
+            else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                document.getElementById("emailError").innerText = "Invalid email"; valid = false;
+            }
+            if (!pass) {
+                document.getElementById("passwordError").innerText = "Password required"; valid = false;
+            }
+            if (pass !== confirm) {
+                document.getElementById("confirmError").innerText = "Passwords do not match"; valid = false;
+            }
+            if (!age) {
+                document.getElementById("ageError").innerText = "Age required"; valid = false;
+            }
+            else if (age < 18) {
+                document.getElementById("ageError").innerText = "Must be 18 or older"; valid = false;
+            }
+            if (valid) document.getElementById("success").innerText = "Registration Successful!";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 3</title>
+</head>
+
+<body>
+    <h2>Movie Ticket Booking</h2>
+    <button onclick="bookTicket()">Book Ticket</button>
+    <p id="result"></p>
+
+    <script>
+        function checkSeat(callback) {
+            setTimeout(() => {
+                let available = Math.random() > 0.5;
+                callback(available);
+            }, 2000);
+        }
+
+        function bookTicket() {
+            document.getElementById("result").innerText = "Checking seat availability...";
+            checkSeat((available) => {
+                if (available) {
+                    document.getElementById("result").innerText = "Seat available. Processing payment...";
+                    let payment = new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                            Math.random() > 0.5 ? resolve("Payment successful!") : reject("Payment failed!");
+                        }, 2000);
+                    });
+                    payment.then(msg => document.getElementById("result").innerText = msg)
+                        .catch(err => document.getElementById("result").innerText = err);
+                } else {
+                    document.getElementById("result").innerText = "Seat not available!";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

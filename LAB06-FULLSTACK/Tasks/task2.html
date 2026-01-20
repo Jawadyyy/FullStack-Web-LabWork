@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 2</title></head>
+<body>
+<h2>Photo Uploader</h2>
+
+<input type="file" id="photoInput" accept="image/*">
+<button onclick="startUpload()">Upload Photo</button>
+<p id="status"></p>
+
+<script>
+function uploadPhoto(callback) {
+  document.getElementById("status").innerText = "Uploading photo...";
+  setTimeout(() => { callback(); }, 2000);
+}
+
+function showMessage() {
+  document.getElementById("status").innerText = "Photo uploaded successfully!";
+}
+
+function startUpload() {
+  let file = document.getElementById("photoInput").files[0];
+  if (!file) {
+    document.getElementById("status").innerText = "Please select a photo first.";
+    return;
+  }
+  uploadPhoto(showMessage);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 4</title>
+</head>
+
+<body>
+    <h2>Weather Update</h2>
+    <button onclick="fetchWeather()">Get Weather</button>
+    <p id="weather"></p>
+
+    <script>
+        function getWeather() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    Math.random() > 0.5 ? resolve("Weather data: Sunny, 28°C") : reject("Failed to fetch weather data!");
+                }, 3000);
+            });
+        }
+
+        function fetchWeather() {
+            document.getElementById("weather").innerText = "Fetching weather...";
+            getWeather()
+                .then(msg => document.getElementById("weather").innerText = msg)
+                .catch(err => document.getElementById("weather").innerText = err)
+                .finally(() => {
+                    document.getElementById("weather").innerText += "\nWeather update completed.";
+                });
+        }
+    </script>
+</body>
+
+</html>
