@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hide and Show Elements</title>
+</head>
+<body>
+
+<h2 id="message">This is a message you can hide or show!</h2>
+
+<button onclick="hideText()">Hide</button>
+<button onclick="showText()">Show</button>
+
+<script>
+  function hideText() {
+    document.getElementById("message").style.display = "none";
+  }
+
+  function showText() {
+    document.getElementById("message").style.display = "block";
+  }
+</script>
+
+</body>
+</html>

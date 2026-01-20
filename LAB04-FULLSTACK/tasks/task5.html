@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <center><h1>---------------------Displaying Sutdents Info---------------------</h1></center>
+    <center><h3 id="demo"></h3></center>
+
+    <script>
+        let stud = {
+            name: "Jawad",
+            rollNo: 232414,
+            marks: 33,
+        };
+
+        function display() {
+                return " Name: \n" + stud.name + " RollNo: \n" + stud.rollNo + " Marks: \n" + stud.marks;
+        }
+
+        document.getElementById("demo").innerHTML = display();
+    </script>
+
+</body>
+
+</html>
+

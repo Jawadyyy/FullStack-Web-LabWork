@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Parsing - Basic</title>
+</head>
+<body>
+  <h3>Basic Form Parsing</h3>
+
+  <form id="myForm">
+    Name: <input type="text" id="name"><br><br>
+    Email: <input type="email" id="email"><br><br>
+    <button type="button" onclick="parseForm()">Submit</button>
+  </form>
+
+  <script>
+    function parseForm() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      console.log("Name:", name);
+      console.log("Email:", email);
+
+      alert(`Submitted:\nName: ${name}\nEmail: ${email}`);
+    }
+  </script>
+</body>
+</html>

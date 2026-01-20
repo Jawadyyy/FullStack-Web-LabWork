@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <center><h1>-----------------------------Age Validating System-----------------------------</h1></center>
+
+    <center>
+        <input type="text" id="age">
+        <button onclick="validateAge()">Validate Age</button>
+        <p id="result"></p>
+    </center>
+
+    <script>
+        function validateAge() {
+            let a = document.getElementById("age").value;
+            try {
+                if (a == "") throw "empty";
+                if (a < 18) throw "too young";
+                if (a > 60) throw "too old";
+                document.getElementById("result").innerHTML = "Valid age";
+            } catch (err) {
+                document.getElementById("result").innerHTML = err;
+            } finally {
+                document.getElementById("age").value = "";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+

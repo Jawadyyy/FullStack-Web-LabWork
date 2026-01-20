@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <input id="demo" type="text">
+
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01">Here</p>
+
+
+    <script>
+        function myFunction() {
+            const message = document.getElementById("p01");
+            message.innerHTML = "";
+
+            var x = Number(document.getElementById("demo").value);
+
+            try {
+                if(x == "") throw "empty";
+                if(x < 5) throw "Input is too low";
+                if(x < 10) throw "Input is too";
+            }
+
+            catch(err) {
+                message.innerHTML = "Input is " + err
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity 6</title>
+</head>
+<body>
+  <h3>Callback</h3>
+
+  <script>
+    function fetchUserData(callback) {
+      let success = true;
+
+      setTimeout(() => {
+        if (success) {
+          callback(null, "User data fetched successfully!");
+        } else {
+          callback("Error fetching user data!", null);
+        }
+      }, 2000);
+    }
+
+    fetchUserData((error, data) => {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log(data);
+      }
+      console.log("Operation finished.");
+    });
+  </script>
+</body>
+</html>

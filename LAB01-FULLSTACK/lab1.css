@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #003366; 
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo img {
+    width: 125px;   
+    height: auto; 
+    display: block;
+}
+
+.cv-title {
+    flex: 2;
+    text-align: center;
+}
+
+.name-title {
+    flex: 1;
+    text-align: right;
+}
+
+.section {
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #003366;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #003366; 
+    font-size: 1.2em;
+    flex: 1; 
+    max-width: 200px; 
+}
+
+.section-content {
+    flex: 3; 
+    line-height: 1.6;
+}
+
+.work-item {
+    margin-bottom: 20px;
+}
+
+.date-range {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #003366; 
+}
+
+.position {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #48aad6; 
+}
+
+.organization {
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.description {
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+.organization-type {
+    font-style: italic;
+    color: #48aad6;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.skill-item {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #48aad6; 
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #003366; 
+}
+
+.project-description {
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+h1 {
+    color: #48aad6; 
+}
+
+h2 {
+    color: #48aad6; 
+}

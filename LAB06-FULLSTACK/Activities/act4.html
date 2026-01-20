@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity 4</title>
+</head>
+<body>
+  <h3>Function Callback Example</h3>
+
+  <script>
+    function greetUser(name, callback) {
+      console.log("Hi " + name);
+      callback(); 
+    }
+
+    function sayBye() {
+      console.log("Goodbye!");
+    }
+
+    greetUser("Jawad", sayBye);
+  </script>
+</body>
+</html>
